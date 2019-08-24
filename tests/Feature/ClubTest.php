@@ -13,11 +13,8 @@ class ClubTest extends TestCase
         $token = $user->generateToken();
         $headers = ['Authorization' => "Bearer $token"];
 
-        $response = $this->json('GET', '/api/articles', [], $headers)
+        $response = $this->json('GET', '/api/clubs', [], $headers)
         ->assertStatus(200)
-        ->assertJson()
-        ->assertJsonStructure([
-            '*' => ['id', 'body', 'title', 'created_at', 'updated_at'],
-        ]);
+        ->assertJson();
     }
 }

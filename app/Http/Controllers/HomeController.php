@@ -4,13 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use GuzzleHttp\Client;
-use Auth;
-use GuzzleHttp\Exception\RequestException;
-use GuzzleHttp\Psr7\Request as GuzzleRequest;
-
 class HomeController extends Controller
 {
+	public function yes(){
+		return redirect('/');
+	}
 	public function index(){
 		if(!empty(request()->user()) && !empty(request()->user()->api_token)){
 			$request = Request::create('/api/clubs', 'GET');
@@ -32,9 +30,7 @@ class HomeController extends Controller
              "password_confirmation" => request('password_confirmation')
         ));
 		$response = app()->handle($request);
-		$register_api_response = $response->getContent();
-		return view('welcome', compact('register_api_response'));
-		
+		return redirect('http://localhost:8000/');
 	}
 
 	public function login(){
@@ -43,8 +39,7 @@ class HomeController extends Controller
              "password" => request('password')
         ));
 		$response = app()->handle($request);
-		$login_api_response = $response->getContent();
-		return redirect()->action('HomeController@index');
+		return redirect('http://localhost:8000/');
 	}
 
 	public function logout(){
@@ -52,6 +47,6 @@ class HomeController extends Controller
 		$request->headers->set('Authorization', 'Bearer '.request()->user()->api_token);
 		$response = app()->handle($request);
 
-		return redirect('/');
+		return redirect('http://localhost:8000/');
 	}
 }

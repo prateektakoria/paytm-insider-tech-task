@@ -52,9 +52,11 @@
         li{
             margin: 5px 0px;
         }
+        .frm-logout{
+            text-align: center;
+        }
         .frm-logout button{
-            margin: 40px 0px;
-            float: right;
+            margin: 10px 0px 40px 0px;
         }
     </style>
 </head>
@@ -85,6 +87,7 @@
     <div class="logout">
         <form action="/logout" method="post" class="frm-logout">
             @csrf
+            <p>Your API Token: {{ request()->user()->api_token }}</p>
             <button class="btn btn-success" type="submit">Get a new API Token</button>
         </form>
     </div>

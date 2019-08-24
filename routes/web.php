@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/yes', function(){
-	return redirect('/');
-});
-Route::get('/', 'HomeController@index')->name('landing-page');
+Route::get('/yes', 'HomeController@yes');
+Route::get('/', 'HomeController@index');
 Route::post('/register', 'HomeController@register');
 Route::post('/login', 'HomeController@login');
 Route::post('/logout', 'HomeController@logout');

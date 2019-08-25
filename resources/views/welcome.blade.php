@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <title>UEFA Football League</title>
         <meta charset="utf-8">
         <link href="/css/style.css" rel='stylesheet' type='text/css' />
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,15 +27,7 @@
         <div class="header" >
             <img src="/images/logo.png" style="width: 150px; margin-bottom: 10px;">
         </div>
-        @if(isset($register_api_response))
-            <p style="color: green;">You got the API Token to access the group of clubs for the UEFA League. Login to Continue.</p>
-            <p style="color: green;">
-                Register API Response:
-                {{ $register_api_response }}
-            </p>
-        @else
             <p>You need an API Token to access the group of clubs for the UEFA League. Create an Account or Login to Continue.</p>
-        @endif
             <form action="/register" method="post" style="padding-bottom: unset;">
                 @csrf
                 <ul class="left-form">

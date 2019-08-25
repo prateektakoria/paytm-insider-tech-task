@@ -1,17 +1,7 @@
-{{-- @foreach($get_clubs as $club)
-    <ul>
-        <h1>{{ $club[0] }}</h1>
-        <li style="color: red;">{{ \App\Club::find($club[1])->name }} ({{ \App\Club::find($club[1])->country_code }})</li>
-        <li>{{ \App\Club::find($club[2])->name }} ({{ \App\Club::find($club[2])->country_code }})</li>
-        <li>{{ \App\Club::find($club[3])->name }} ({{ \App\Club::find($club[3])->country_code }})</li>
-        <li>{{ \App\Club::find($club[4])->name }} ({{ \App\Club::find($club[4])->country_code }})</li>
-    </ul>
-@endforeach --}}
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Football league</title>
+    <title>UEFA Football league</title>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>

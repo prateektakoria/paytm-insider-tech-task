@@ -2,7 +2,7 @@
 <p>
     <ul>
         <li>Run git clone https://github.com/prateektakoria/paytm-insider-tech-task.git laravel-admin</li>
-        <li>From the projects root run <pre>cp .env.example .env</pre></li>
+        <li>From the projects root run <code>cp .env.example .env</code></li>
         <li>Configure your <pre>.env</pre> file</li>
         <li>Run <pre>composer update</pre> from the project's root folder</li>
         <li>From the projects root folder run <pre>php artisan key:generate</pre></li>

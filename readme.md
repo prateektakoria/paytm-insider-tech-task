@@ -75,3 +75,11 @@
         }
     </pre>
 </p>
+
+<h3>References:</h3>
+<p>List of references i used to make this project
+    <ul>
+        <li>https://toptal.com/laravel/restful-laravel-api-tutorial</li>
+        <li>https://w3layouts.com/login-registration-template/</li>
+    </ul>
+</p>

@@ -50,11 +50,27 @@
         {
             "data": {
                 "id":1,
-                "name":"Administrator",
-                "email":"admin@test.com",
+                "name":"Prateek Saini",
+                "email":"admin@example.com",
                 "created_at":"2017-04-25 01:05:34",
                 "updated_at":"2017-04-25 02:50:40",
                 "api_token":"Jll7q0BSijLOrzaOSm5Dr5hW9cJRZAJKOzvDlxjKCXepwAeZ7JR6YP5zQqnw"
+            }
+        }
+    </pre>
+</p>
+
+<h3>POST: /api/logout</h3>
+<p>
+    <b>Here’s what we get when we hit this endpoint:</b>
+    <pre>
+        $ curl -X POST http://localhost:8000/api/logout \
+        -H "Accept: application/json" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer 0syHnl0Y9jOIfszq11EC2CBQwCfObmvscrZYo5o2ilZPnohvndH797nDNyAT" \
+        {
+            "data": {        
+                "User Logged Out."
             }
         }
     </pre>

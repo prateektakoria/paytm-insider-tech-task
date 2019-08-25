@@ -21,7 +21,7 @@
 <h3>POST: /api/register</h3>
 <p>
     <b>Here’s what we get when we hit that endpoint:</b>
-<code>
+<pre>
     $ curl -X POST http://localhost:8000/api/register \
     -H "Accept: application/json" \
     -H "Content-Type: application/json" \
@@ -36,5 +36,5 @@
             "updated_at": "2019-08-20 21:17:15"
         }
     }
-</code>
+</pre>
 </p>

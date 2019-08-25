@@ -20,7 +20,7 @@
 
 <h3>POST: /api/register</h3>
 <p>
-    <b>Here’s what we get when we hit that endpoint:</b>
+    <b>Here’s what we get when we hit this endpoint:</b>
 <pre>
     $ curl -X POST http://localhost:8000/api/register \
     -H "Accept: application/json" \
@@ -37,4 +37,25 @@
         }
     }
 </pre>
+</p>
+
+<h3>POST: /api/login</h3>
+<p>
+    <b>Here’s what we get when we hit this endpoint:</b>
+    <pre>
+        $ curl -X POST localhost:8000/api/login \
+        -H "Accept: application/json" \
+        -H "Content-type: application/json" \
+        -d "{\"email\": \"admin@example.com\", \"password\": \"12345678\" }"
+        {
+            "data": {
+                "id":1,
+                "name":"Administrator",
+                "email":"admin@test.com",
+                "created_at":"2017-04-25 01:05:34",
+                "updated_at":"2017-04-25 02:50:40",
+                "api_token":"Jll7q0BSijLOrzaOSm5Dr5hW9cJRZAJKOzvDlxjKCXepwAeZ7JR6YP5zQqnw"
+            }
+        }
+    </pre>
 </p>

@@ -1,7 +1,7 @@
 <h1>Quick Setup for this Project</h1>
 <p>
     <ul>
-        <li>Run git clone https://github.com/prateektakoria/paytm-insider-tech-task.git laravel-admin</li>
+        <li>Run <code>git clone https://github.com/prateektakoria/paytm-insider-tech-task.git</code></li>
         <li>From the projects root run <code>cp .env.example .env</code></li>
         <li>Configure your <code>.env</code> file</li>
         <li>Run <code>composer update</code> from the project's root folder</li>
